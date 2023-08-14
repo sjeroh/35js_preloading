@@ -1,0 +1,45 @@
+@charset "UTF-8";
+*{margin: 0; padding: 0;}
+
+.images{
+  background: url(img/sky001.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.images img{
+  position: absolute;
+
+}
+
+.progress{
+  position: fixed;
+  background-color: #222;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition:  0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000);;
+}
+
+.progress .progress-bar{
+  border-top: 1px solid rgba(160,160,160);
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+.progress .progress-text{
+  position: absolute;
+  top: 52%;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+}
+
+.progress-complete .progress-bar{
+  border-top-color: rgb(255,255,255);
+}
